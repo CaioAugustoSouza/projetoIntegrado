@@ -1,0 +1,119 @@
+.icones{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, img{
+    width: 300px;
+    height: 300px;
+}
+
+.imgesquerda{
+    width: 200px;
+    height: 100px;
+    float:left;
+    margin-left: 10px;
+}
+.imgdireita{
+    width: 200px;
+    height: 100px;
+    float:right;
+    margin-left: 10px;
+    
+}
+.centralizar-tudo{
+    justify-content: center;
+    align-items: center;
+}
+
+/*.gradient-custom-3 {
+background: #84fab0;
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}*/
+
+.gradient-custom-4 {
+background: #69cf8f;
+}
+
+.gradient-custom-5 {
+    border-radius: 15px;
+    /* fallback for old browsers */
+    background: #84fab0;
+    border-color: #84fab0;
+    color: black;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    border-color: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    border-color: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));;
+    
+}
+
+.bg-green{
+    background-color: rgba(95, 201, 95, 0.308);
+}
+
+.wdt-100{
+    width: 100%;
+    height: 100%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.feedbackh5{
+    color: white;
+}
+
+.margin-top4{
+    margin-top: 4px;
+}
+
+.marginleft2em{
+    margin-left: 2em;
+}
+.textarea1{
+    width: 50%;
+    height: auto;
+}
+
+.imagemdadiv{
+    display: flex;
+    justify-content: center;
+}
+
+.imagemdadiv img{
+    width: 500px;
+    height: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.width-100{
+    width: 100%;
+}
+.marginright2em {
+    margin-right: 2em;
+}
+.radius-15px{
+    border-radius: 15px;
+}
+.marginright6em{
+    margin-right: 6em;
+}
+
+.alertaErro {
+    color: red;
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 5px;
+}

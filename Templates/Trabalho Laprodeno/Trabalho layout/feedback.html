@@ -1,0 +1,396 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Laura Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/meuestilo.css" rel="stylesheet">
+
+    <script src="assets/js/nosso.js"></script>
+
+    <style>
+      .botao{
+        color:white;
+        border-radius: 15px;
+        padding: 5px;
+        background-color: rgb(250, 59, 59);
+        border-color: rgb(250, 59, 59);
+        font-weight: bold;
+      }
+    </style>
+    <!-- =======================================================
+    * Template Name: Laura
+    * Updated: Jan 29 2024 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex justify-content-center align-items-center">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html #hero">Menu</a></li>
+          <li><a class="nav-link scrollto" href="index.html #about">Sobre nós</a></li>
+          <li><a class="nav-link scrollto" href="index.html #services">Resumo</a></li>
+          <li><a class="nav-link scrollto" href="index.html #contact">Contato</a></li>
+          <li><a class="nav-link scrollto active" href="feedback.html">Feedback</a></li>
+          <li><a class="nav-link scrollto " href="login.html" target="_blank">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </header><!-- End Header -->
+
+    <section id="feedback" class="feedback">
+      <div class="container">
+        <div class="section-title">
+          <section class="container"><!--vh-100 bg-image-->
+            <div class="  ">
+              <div class="container"><!--container h-100-->
+                <form class="row g-3">
+                  <div class="mx-0 mx-sm-auto">
+                    <div class="card">
+                      <div class="gradient-custom-4 mb-3">
+                        <h5 class="gradient-custom-4 text-center feedbackh5 margin-top4" id="exampleModalLabel">Feedback
+                        </h5>
+                      </div>
+                      <div class="container row "><!--container h-100-->
+                        <div class="col-md-4 mb-3">
+                          <label for="nomecompleto" class="form-label">Nome completo *</label>
+                          <input type="text" name="nomecompleto" onblur="verificaNomeCompleto(this)" class="form-control"
+                            placeholder="Informe o nome completo" id="nomecompleto" value="" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoNomeCompleto"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="telefone" class="form-label">Telefone *</label>
+                          <input type="tel" class="form-control" placeholder="Informe o seu telefone" id="telefone"
+                            name="telefone" onblur="verificarTelefone (this)" value="" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoTelefone"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="email" class="form-label">Email *</label>
+                          <div class="input-group has-validation">
+                            <input type="text" class="form-control" placeholder="usuario123@hotmail.com" id="email"
+                              name="email" onblur="verificarEmail(this)" aria-describedby="inputGroupPrepend"
+                              required="required">
+                          </div>
+                          <p class="alertaErro alert alert-danger" id="avisoEmail"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="cep" class="form-label">CEP *</label>
+                          <input type="text" class="form-control" placeholder="Informe o CEP" id="cep" name="cep"
+                            required="required" onblur="verificarCep (this)">
+                          <p class="alertaErro alert alert-danger" id="avisoCep"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="Cidade" class="form-label">Cidade *</label>
+                          <input onblur="verificarNome(this)" type="text" class="form-control"
+                            placeholder="Informe a cidade" name="cidade" id="cidade" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoNome"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="bairro" class="form-label">Bairro *</label>
+                          <input onblur="verificarBairro(this)" type="text" class="form-control"
+                            placeholder="Informe o bairro" name="bairro" id="bairro" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoBairro"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="numero" class="form-label">Numero *</label>
+                          <input type="text" name="numero" onblur="verificarNumero(this)" class="form-control"
+                            placeholder="Informe o numero" id="numero" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoNumero"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="rua" class="form-label">Rua *</label>
+                          <input type="text" onblur="verificarRua(this)" class="form-control" placeholder="Informe a rua"
+                            id="rua" name="rua" required="required">
+                          <p class="alertaErro alert alert-danger" id="avisoRua"></p>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="estado" class="form-label">Estado *</label>
+                          <select class="form-select" onblur="verificarEstado(this)" id="estado" name="estado"
+                            required="required">
+                            <option selected disabled value="">Escolher...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                          </select>
+                          <p class="alertaErro alert alert-danger" id="avisoEstado"></p>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-check">
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="mx-sm-auto text-center">
+                        <label class="mb-4" for="pergunta"><b>Já realizou algum procedimento dentário?</b></label><br>
+                        <div class="row justify-content-center">
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" name="pergunta" id="sim" value="sim" onblur="verificarSimNao()" />
+                                <label class="form-check-label" for="sim">Sim</label>
+                            </div>
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" name="pergunta" id="nao" value="nao" checked onblur="verificarSimNao()" />
+                                <label class="form-check-label" for="nao">Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-outline mb-4 marginleft2em marginright2em text-center form-floating" id="areaResposta">
+                        <textarea class="radius-15px marginleft2em width-100 mx-sm-auto radius form-control" placeholder="Se sim, descreva esse procedimento..." id="resposta1" onblur="verificarResposta()" rows="4"></textarea>
+                        <label for="resposta1">Se sim, descreva esse procedimento...</label>
+                        <p class="alertaErro alert alert-danger" id="avisoResposta"></p>
+                    </div>
+                      <!--começo-->
+                      <div class="mx-sm-auto text-center">
+                        <label class="mb-4" for="pergunta"><b>Selecione a melhor opção que descreve sua experiência com
+                            doenças relacionadas à prótese dentária:</b></label><br>
+                        <div class="row justify-content-center">
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" onblur="verificarDoenca(this)" name="doenca" id="gengitive" value="gengitive" />
+                                <label class="form-check-label" for="gengitive">Gengivite relacionada à prótese</label>
+                            </div>
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" onblur="verificarDoenca(this)" name="doenca" id="estomatite" value="estomatite" />
+                                <label class="form-check-label" for="estomatite">Estomatite protética</label>
+                            </div>
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" onblur="verificarDoenca(this)" name="doenca" id="candidiase" value="candidiase" />
+                                <label class="form-check-label" for="candidiase">Candidíase oral</label>
+                            </div>
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" onblur="verificarDoenca(this)" name="doenca" id="alergia" value="alergia" />
+                                <label class="form-check-label" for="alergia">Reações alérgicas à prótese</label>
+                            </div>
+                            <div class="mb-2 col-md-3 marginleft2em">
+                                <input class="form-check-input" style="border-color: black;" type="radio" name="doenca" id="nenhuma" value="nenhuma" checked />
+                                <label class="form-check-label" for="nenhuma">Nenhuma</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-outline mb-4 marginleft2em marginright2em text-center form-floating">
+                      <textarea class="radius-15px marginleft2em width-100 mx-sm-auto radius form-control" onblur="verificarDoenca()" placeholder="Se marcou alguma experiência, exceto a última alternativa, descreva como foi..." id="resposta2" rows="4"></textarea>
+                      <label for="resposta2">Se marcou alguma experiência, exceto a última alternativa, descreva como foi...</label>
+                      <p class="alertaErro alert alert-danger" id="avisoDoenca"></p>
+                  </div>
+                      <hr>
+                      <div class="text-center margin-top4">
+                        <p>Como você avalia nosso produto?</p>
+                      </div>
+                      <div class="form-check mb-2 marginleft2em">
+                        <input class="form-check-input" style="border-color: black;" value="Muito Bom" type="radio" name="exampleForm"
+                          id="radio3Example1" />
+                        <label class="form-check-label" for="radio3Example1">
+                          Muito Bom
+                        </label>
+                      </div>
+                      <div class="form-check mb-2 marginleft2em">
+                        <input class="form-check-input" style="border-color: black;" value="Bom" type="radio" name="exampleForm"
+                          id="radio3Example1" />
+                        <label class="form-check-label" for="radio3Example1">
+                          Bom
+                        </label>
+                      </div>
+                      <div class="form-check mb-2 marginleft2em">
+                        <input class="form-check-input" style="border-color: black;" value="Médio" type="radio" name="exampleForm"
+                          id="radio3Example1" />
+                        <label class="form-check-label" for="radio3Example1">
+                          Médio
+                        </label>
+                      </div>
+                      <div class="form-check mb-2 marginleft2em">
+                        <input class="form-check-input" style="border-color: black;" value="Ruim" type="radio" name="exampleForm"
+                          id="radio3Example1" />
+                        <label class="form-check-label" for="radio3Example1">
+                          Ruim
+                        </label>
+                      </div>
+                      <div class="form-check mb-2 marginleft2em">
+                        <input class="form-check-input" style="border-color: black;" value="Muito Ruim" type="radio" name="exampleForm"
+                          id="radio3Example1" />
+                        <label class="form-check-label" for="radio3Example1">
+                          Muito Ruim
+                        </label>
+                      </div>
+                      <p class="text-center"><strong>O que poderíamos melhorar?</strong></p>
+                      <div class="form-outline mb-4 marginleft2em marginright2em text-center form-floating">
+                        <textarea class="radius-15px marginleft2em width-100 mx-sm-auto radius form-control"
+                          placeholder="Comente o seu feedback..." id="comentario" rows="4"></textarea>
+                        <label for="comentario">Comente o seu feedback...</label>
+                      </div>
+                      <!--começo-->
+                      <div class="text-center">
+                        <p>
+                          <strong>Como você avalia o suporte ao cliente</strong>
+                        </p>
+                      </div>
+                      <div class="mx-0 mx-sm-auto mb-4">
+                        <div class="d-inline mx-3">
+                          Ruim
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" style="border-color: black;" type="radio"
+                            name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                          <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" style="border-color: black;" type="radio"
+                            name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                          <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" style="border-color: black;" type="radio"
+                            name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                          <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" style="border-color: black;" type="radio"
+                            name="inlineRadioOptions" id="inlineRadio4" value="option4" />
+                          <label class="form-check-label" for="inlineRadio4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" style="border-color: black;" type="radio"
+                            name="inlineRadioOptions" id="inlineRadio5" value="option5" />
+                          <label class="form-check-label" for="inlineRadio5">5</label>
+                          <div class="d-inline mx-3">
+                            Excelente
+                          </div>
+                        </div>
+                      </div>
+                      <!--final-->
+
+                      <div class="text-center mb-4">
+                        <button type="button" id="btnEnviar" onclick="enviarDados()" name="btnEnviar"
+                          class="btn btn-success btn-block btn-lg gradient-custom-4 text-body margin-top4">
+                          Enviar</button>
+                          <p class="alertaErro alert alert-danger" id="avisoDados"></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </section><!-- End About Me Section -->
+    <div class="container">
+      <h2>Lista de Feedbacks</h2>
+      <table class="table" id="tabelaFeedback">
+          <thead>
+              <tr>
+                  <th scope="col"><input type="checkbox" id="ckTodos" onchange="selecionaTodos()"></th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Telefone</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Avaliação</th>
+                  <th scope="col">Excluir</th>
+              </tr>
+          </thead>
+          <tbody id="tb-body">
+              <script src="nosso.js"></script>
+              <script>
+                  criarTabela();
+              </script>
+          </tbody>
+      </table>
+      <div>
+          <input class="botao" type="button" value="Excluir selecionados" id="btnExcluirSelecionados">
+      </div>
+  </div>
+<br><br><br><br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h2 class="section-title2">Laprodeno</h2>
+      <p></p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/laprodeno?igsh=MTYxcTNIYTJxNWgyaQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Laprodeno</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/nosso.js"></script>
+</body>
+
+</html>

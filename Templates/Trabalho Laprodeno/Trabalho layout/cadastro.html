@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Laura Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/meuestilo.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Laura
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " href="index.html #hero">Menu</a></li>
+        <li><a class="nav-link scrollto" href="index.html #about">Sobre nós</a></li>
+        <li><a class="nav-link scrollto" href="index.html #services">Resumo</a></li>
+        <li><a class="nav-link scrollto" href="index.html #contact">Contato</a></li>
+        <li><a class="nav-link scrollto " href="feedback.html" target="_blank">Feedback</a></li>
+        <li><a class="nav-link scrollto active" href="login.html">Login</a></li>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <section id="cadastro" class="cadastro">
+    <div class="container bg-green wdt-100">
+      <div class="section-title">
+        <section class="container">
+          <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                  <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                      <h2 class="text-uppercase text-center mb-5">Criar uma conta</h2>
+                      <form>
+                        <div class="form-outline mb-4 form-floating">
+                            <input type="text" onblur="verificarNome(this)" name="nome" id="nome" placeholder="Informe o seu nome" class="form-control form-control-lg" />
+                            <label class="form-label" for="nome">Informe o seu nome *</label>
+                            <p class="alertaErro alert alert-danger" id="avisoNome"></p>    
+                        </div>
+                        <div class="form-outline mb-4 form-floating">
+                            <input type="email" onblur="verificarEmail(this)" name="email" id="email" placeholder="Informe o seu e-mail" class="form-control form-control-lg" />
+                            <label class="form-label" for="email">Informe o seu e-mail *</label>
+                            <p class="alertaErro alert alert-danger" id="avisoEmail"></p>   
+                        </div>
+                        <div class="form-outline mb-4 form-floating">                         
+                          <input type="password" onblur="verificarSenha(event)" name="senha" id="senha" placeholder="Informe sua senha" class="form-control form-control-lg" />
+                          <label class="form-label" for="senha">Informe sua senha *</label>
+                          <p class="alertaErro alert alert-danger" id="avisoSenha"></p>   
+                      </div>
+                      <div class="form-outline mb-4 form-floating">
+                          <input type="password" onblur="verificarSenhaIgual()" name="senhaRepetida" id="senhaRepetida" placeholder="Informe sua senha novamente" class="form-control form-control-lg" />
+                          <label class="form-label" for="senhaRepetida">Informe sua senha novamente *</label>
+                          <p class="alertaErro alert alert-danger" id="avisoSenhaRepetida"></p>   
+                      </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="button"
+                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrar</button>
+                        </div>
+                        <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a href="login.html" target="_blank"
+                            class="fw-bold text-body"><u> Faça login aqui.</u></a></p>
+                      </div>      
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section><!-- End About Me Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h2 class ="section-title2">Laprodeno</h2>
+      <p></p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/laprodeno?igsh=MTYxcTNIYTJxNWgyaQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Laprodeno</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/nosso.js"></script>
+</body>
+
+</html>
